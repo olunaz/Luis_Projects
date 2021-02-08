@@ -1,0 +1,21 @@
+{
+  "id": "6dbe79eb-93e2-4f01-94ce-59f22df5e36a",
+  "version": "2.0",
+  "name": "Prueba_Selenium",
+  "url": "",
+  "tests": [{
+    "id": "aa4b9293-9b9f-4125-957b-39eee109d765",
+    "name": "Untitled",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "69d6ce07-ba8a-4d90-a4bd-6dad041c5a0b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["aa4b9293-9b9f-4125-957b-39eee109d765"]
+  }],
+  "urls": [],
+  "plugins": []
+}

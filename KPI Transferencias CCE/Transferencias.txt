@@ -1,0 +1,12 @@
+EMITIDAS
+Transferecnias total = FEJPCC04
+Devoluciones             = FEJP6400
+RECIBIDAS
+Transferencias tarjetas = FEJP6520
+Transferencias total      = FEJPCC10
+Devoluciones                  = FEJP6340
+
+Application.Wait (Now + TimeValue("00:00:02")) hace un alto en la macro en 2 segundos
+
+
+

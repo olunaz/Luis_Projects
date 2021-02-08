@@ -1,0 +1,802 @@
+<script>
+    //PROCEDIMIENTOS INICIALES
+    window.addEventListener('load', procedimientos_iniciales);
+
+    function procedimientos_iniciales() {
+        google.script.run.withSuccessHandler(loadAccessType).getAccessType();
+    };
+
+    //CAMBIAR VALOR DEL CONTENEDOR PRINCIPAL
+    function actualizarDiv(html) {
+        document.getElementById('contenedor_principal').innerHTML = html;
+        window.scrollTo(0, 0);
+        return;
+    }
+
+    //BORRAR NOTIFICACIONES
+    function limpiar_notificacion() {
+        document.getElementById('pw_notificacion').innerHTML = "";
+    };
+
+    // IMPRIMIR LOS ACCESOS ENCONTRADOS
+    function loadAccessType(AccessType) {
+        if (AccessType.nombre == "") {
+            document.getElementById('pw_usuario').innerHTML = AccessType.correo;
+            document.getElementById('pw_acceso').innerHTML = "Acceso genérico";
+        } else {
+            document.getElementById('pw_usuario').innerHTML = AccessType.nombre;
+            document.getElementById('pw_acceso').innerHTML = AccessType.acceso;
+            if (AccessType.acceso == "Acceso desarrollador") {
+                document.getElementById('pw_error').innerHTML = "Acceso de desarrollo";
+            };
+        };
+
+        document.getElementById('barra_usuario').style = "background-image:linear-gradient(to right, #808B96 , #666666)";
+        google.script.run.withSuccessHandler(actualizarDiv).include("Inicio");
+    };
+
+
+
+    //CARGAR PÁGINA WEB
+    function cargar_pagina_web(pag_web) {
+        var AccessType = document.getElementById('pw_acceso').innerHTML;
+        if (AccessType == "Acceso genérico") {
+            document.getElementById('pw_notificacion').innerHTML = '' +
+                '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>' +
+                '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navegador3">' +
+                '  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">' +
+                '    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>' +
+                '    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>' +
+                '    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">' +
+                '      Lo sentimos, usted no cuenta con permisos para poder acceder al enlace. Si necesita modificar su tipo de acceso, por favor comunicarse con BEX Transformation de Operaciones Centralizadas.' +
+                '    </div>' +
+                '    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>' +
+                '    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">' +
+                '      <button onclick = "limpiar_notificacion();"' +
+                '              class="col-lg-12 col-md-12 col-sm-12 col-xs-12 button_notificacion casilla_boton_ingreso texto_centrado" ' +
+                '              id="id_limpiar_notificacion">' +
+                '        <b>Aceptar</b><br>' +
+                '      </button>' +
+                '    </div>' +
+                '  </div>' +
+                '</div>';
+        } else if (AccessType == "Acceso total") {
+            window.open(pag_web, '_blank');
+        } else if (AccessType == "Acceso desarrollador") {
+            window.open(pag_web, '_blank');
+        }
+    }
+
+    //CARGAR ESPACIO DE PÁGINA WEB
+    function cargarContenedor(html) {
+
+        if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+            var valor = document.getElementById('pw_error').innerHTML;
+            document.getElementById('pw_error').innerHTML = valor + "<br>Mover a otra página";
+        };
+
+        var AccessType = document.getElementById('pw_acceso').innerHTML;
+        if (AccessType == "Acceso genérico") {
+            if (html == 'Inicio') {
+
+            } else if (html == 'Fondo_Reactiva') {} else if (html == 'C_Fondo_Reactiva') {} else if (html == 'Reprogramaciones') {} else if (html == 'C_Reprogramaciones') {} else if (html == 'Retiro_AFP') {} else if (html == 'Consulta_Retiro_AFP') {
+
+            } else if (html == 'Marcas_restrictivas') {} else if (html == 'Consulta_Marcas_restrictivas') {} else if (html == 'CTS_Abonos') {} else if (html == 'Consulta_CTS_Abonos') {} else if (html == 'CTS_Egresos') {} else if (html == 'Consulta_CTS_Egresos') {} else if (html == 'CTS_Retenciones') {} else if (html == 'Consulta_CTS_Retenciones') {} else if (html == 'Mod_BD_PJ') {} else if (html == 'Consulta_Mod_BD_PJ') {} else if (html == 'Auditores_Externos_Minorista') {} else if (html == 'Consulta_Auditores_Externos_Minorista') {} else if (html == 'Verificaciones_domiciliarias') {} else if (html == 'Consulta_Verificaciones_domiciliarias') {
+
+
+            } else if (html == 'Aperturas_contables') {} else if (html == 'Consulta_Aperturas_contables') {} else if (html == 'Cruce_partidas') {} else if (html == 'Consulta_Cruce_partidas') {} else if (html == 'Diferencias_contables') {} else if (html == 'Consulta_Diferencias_contables') {} else if (html == 'Envio_billetes_adulterados') {} else if (html == 'Consulta_Envio_billetes_adulterados') {} else if (html == 'Envio_claves_ATMs') {} else if (html == 'Consulta_Envio_claves_ATMs') {} else if (html == 'Limites_operativos') {} else if (html == 'Consulta_Limites_operativos') {} else if (html == 'No_conformidades') {} else if (html == 'Consulta_No_conformidades') {
+
+            } else if (html == 'KPI_CS_Reprocesos') {} else if (html == 'KPI_WebPyme_Reprocesos') {
+
+            } else {
+                html = 'Inicio';
+            };
+
+        } else if (AccessType == "Acceso total") {
+            if (html == 'Inicio') {
+
+            } else if (html == 'Fondo_Reactiva') {} else if (html == 'C_Fondo_Reactiva') {} else if (html == 'Reprogramaciones') {} else if (html == 'C_Reprogramaciones') {} else if (html == 'Retiro_AFP') {} else if (html == 'Consulta_Retiro_AFP') {
+
+            } else if (html == 'Marcas_restrictivas') {} else if (html == 'Consulta_Marcas_restrictivas') {} else if (html == 'CTS_Abonos') {} else if (html == 'Consulta_CTS_Abonos') {} else if (html == 'CTS_Egresos') {} else if (html == 'Consulta_CTS_Egresos') {} else if (html == 'CTS_Retenciones') {} else if (html == 'Consulta_CTS_Retenciones') {} else if (html == 'Mod_BD_PJ') {} else if (html == 'Consulta_Mod_BD_PJ') {} else if (html == 'Auditores_Externos_Minorista') {} else if (html == 'Consulta_Auditores_Externos_Minorista') {} else if (html == 'Verificaciones_domiciliarias') {} else if (html == 'Consulta_Verificaciones_domiciliarias') {
+
+            } else if (html == 'Aperturas_contables') {} else if (html == 'Consulta_Aperturas_contables') {} else if (html == 'Cruce_partidas') {} else if (html == 'Consulta_Cruce_partidas') {} else if (html == 'Diferencias_contables') {} else if (html == 'Consulta_Diferencias_contables') {} else if (html == 'Envio_billetes_adulterados') {} else if (html == 'Consulta_Envio_billetes_adulterados') {} else if (html == 'Envio_claves_ATMs') {} else if (html == 'Consulta_Envio_claves_ATMs') {} else if (html == 'Limites_operativos') {} else if (html == 'Consulta_Limites_operativos') {} else if (html == 'No_conformidades') {} else if (html == 'Consulta_No_conformidades') {
+
+            } else if (html == 'KPI_CS_Reprocesos') {} else if (html == 'KPI_WebPyme_Reprocesos') {
+
+            } else {
+                html = 'Inicio';
+            };
+
+        } else if (AccessType == "Acceso desarrollador") {
+            if (html == 'Inicio') {
+
+            } else if (html == 'Fondo_Reactiva') {} else if (html == 'C_Fondo_Reactiva') {} else if (html == 'Reprogramaciones') {} else if (html == 'C_Reprogramaciones') {} else if (html == 'Retiro_AFP') {} else if (html == 'Consulta_Retiro_AFP') {
+
+            } else if (html == 'Marcas_restrictivas') {} else if (html == 'Consulta_Marcas_restrictivas') {} else if (html == 'CTS_Abonos') {} else if (html == 'Consulta_CTS_Abonos') {} else if (html == 'CTS_Egresos') {} else if (html == 'Consulta_CTS_Egresos') {} else if (html == 'CTS_Retenciones') {} else if (html == 'Consulta_CTS_Retenciones') {} else if (html == 'Mod_BD_PJ') {} else if (html == 'Consulta_Mod_BD_PJ') {} else if (html == 'Auditores_Externos_Minorista') {} else if (html == 'Consulta_Auditores_Externos_Minorista') {} else if (html == 'Verificaciones_domiciliarias') {} else if (html == 'Consulta_Verificaciones_domiciliarias') {
+
+            } else if (html == 'Aperturas_contables') {} else if (html == 'Consulta_Aperturas_contables') {} else if (html == 'Cruce_partidas') {} else if (html == 'Consulta_Cruce_partidas') {} else if (html == 'Diferencias_contables') {} else if (html == 'Consulta_Diferencias_contables') {} else if (html == 'Envio_billetes_adulterados') {} else if (html == 'Consulta_Envio_billetes_adulterados') {} else if (html == 'Envio_claves_ATMs') {} else if (html == 'Consulta_Envio_claves_ATMs') {} else if (html == 'Limites_operativos') {} else if (html == 'Consulta_Limites_operativos') {} else if (html == 'No_conformidades') {} else if (html == 'Consulta_No_conformidades') {
+
+            } else if (html == 'KPI_CS_Reprocesos') {} else if (html == 'KPI_WebPyme_Reprocesos') {
+
+            } else {
+                html = 'Inicio';
+            };
+
+        } else {
+            html = 'Inicio';
+        };
+
+        if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+            var valor = document.getElementById('pw_error').innerHTML;
+            document.getElementById('pw_error').innerHTML = valor + "<br>Html: " + html;
+        };
+
+        var value_scroll = 0;
+
+        if (html == 'Procesos_Web') {
+            value_scroll = 3850;
+            html = 'Inicio';
+        } else if (html == 'KPIs') {
+            value_scroll = 850;
+            html = 'Inicio';
+        } else {
+
+        };
+
+        google.script.run.withSuccessHandler(
+            (value_contenedor) => {
+                document.getElementById('contenedor_principal').innerHTML = value_contenedor;
+                window.scrollTo(0, value_scroll);
+
+                if (html == "Aperturas_contables" ||
+                    html == "Cruce_partidas" ||
+                    html == "Diferencias_contables" ||
+                    html == "Envio_billetes_adulterados" ||
+                    html == "Envio_claves_ATMs" ||
+                    html == "Limites_operativos" ||
+                    html == "No_conformidades" ||
+                    html == "CTS_Egresos") {
+                    google.script.run.withSuccessHandler((valores) => {
+                        document.getElementById('correo').value = valores.correo;
+                        document.getElementById('registro').value = valores.registro;
+                        document.getElementById('nombre').value = valores.nombre;
+
+                        document.getElementById('oficina').value = valores.oficina;
+                        document.getElementById('nombre_oficina').value = valores.nombre_oficina;
+                        document.getElementById('territorio').value = valores.territorio;
+
+                    }).capturar_informacion();
+                }
+
+                if (html == "Fondo_Reactiva" ||
+                    html == "ddddd") {
+                    google.script.run.withSuccessHandler((valores) => {
+                        document.getElementById('correo').value = valores.correo;
+                        document.getElementById('registro').value = valores.registro;
+
+                    }).capturar_informacion();
+                }
+
+                if (html == "Reprogramaciones" ||
+                    html == "ddddd") {
+                    google.script.run.withSuccessHandler((valores) => {
+                        document.getElementById('correo').value = valores.correo;
+                        document.getElementById('cod_oficina').value = valores.oficina;
+
+                    }).capturar_informacion();
+                }
+
+            }
+        ).include(html);
+
+    }
+
+
+
+    //CARGAR ARCHIVO A CARPETA E IMPRIMIR URL
+    function getFiles_Mod(id, id_url, id_folder, proc) {
+        //google.script.run.cargarLog("entro a función")
+        try {
+            if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+                var valor = document.getElementById('pw_error').innerHTML;
+                document.getElementById('pw_error').innerHTML = valor + "id: " + id + ";id_url: " + id_url + ";id_folder: " + id_folder + ";proc: " + proc;
+            }
+            const f = document.getElementById(id);
+            [...f.files].forEach((file, i) => {
+                const fr = new FileReader();
+                fr.onload = (e) => {
+                    const data = e.target.result.split(",");
+                    const obj = {
+                        fileName: f.files[i].name,
+                        mimeType: data[0].match(/:(\w.+);/)[1],
+                        data: data[1],
+                        folder: id_folder,
+                        proceso: proc
+                    };
+                    google.script.run.withSuccessHandler((InfFile) => {
+                        document.getElementById(id_url).value = InfFile.url;
+                    }).saveFile(obj);
+                };
+                fr.readAsDataURL(file);
+            });
+        } catch (mensaje_error) {
+            if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+                var valor = document.getElementById('pw_error').innerHTML;
+                document.getElementById('pw_error').innerHTML = valor + "<br>error: " + mensaje_error;
+            }
+        };
+    };
+
+
+    // PROCEDIMIENTOS PARA LIMITES OPERATIVOS 
+    // ACTUALIZAR INFORMACIÓN DEL SELECTION 
+
+    function actualizar_selection_limites_operativos() {
+        var dato = document.getElementById('concepto').value;
+        if (dato == "BG") {
+            document.getElementById('facultad').innerHTML = "" +
+                '<option style = "color:black" value = ""                                              >-</option>' +
+                '<option style = "color:black" value = "Emisión de cheques de Gerencia"                >Emisión de cheques de gerencia</option>' +
+                '<option style = "color:black" value = "Modificación de línea formalizada a cta cte"  >Modificación de líneas formalizada a cta cte</option>' +
+                '<option style = "color:black" value = "Nota de cargo / Retiro en efectivo de cuenta"  >Nota de cargo / retiro en efectivo de cuenta</option>' +
+                '<option style = "color:black" value = "Nota de abono / Depósito en efectivo en cuenta">Nota de abono / depósito en efectivo en cuenta</option>' +
+                '<option style = "color:black" value = "Devolución ITF"                                >Devolución ITF</option>' +
+                '<option style = "color:black" value = "Traspaso entre cuentas"                        >Traspaso entre cuentas</option>' +
+                '<option style = "color:black" value = "Pago de TT Pais por un Rescate de Fondos Mutuos">Pago de TT Pais por un Rescate de Fondos Mutuos</option>' +
+                '<option style = "color:black" value = "Pago Proveedores"                               >Pago Proveedores</option>' +
+                '<option style = "color:black" value = "mision/ Cancelacion de Certificado Bancario M.E.">mision/ Cancelacion de Certificado Bancario M.E.</option>' +
+                '<option style = "color:black" value = "Aprobacion de Linea No Avisada"                  >Aprobacion de Linea No Avisada</option>' +
+                '<option style = "color:black" value = "Reemplazo de Gerente"                  >Remplazo de Gerente</option>';
+
+        } else if (dato == "FE") {
+            document.getElementById('facultad').innerHTML = "" +
+                '<option style = "color:black" value = ""                                              >-</option>' +
+                '<option style = "color:black" value = "Transferencias via BCR"                >Transferencias vias BCR</option>' +
+                '<option style = "color:black" value = "Transferencias Interbancarias"                >Transferencias Interbancarias</option>' +
+                '<option style = "color:black" value = "Reemplazo de Gerente"                  >Remplazo de Gerente</option>';
+        } else if (dato == "FM") {
+            document.getElementById('facultad').innerHTML = "" +
+                '<option style = "color:black" value = ""                                              >-</option>' +
+                '<option style = "color:black" value = "Rescates Fondos Mutuos"                >Rescates Fondos Mutuos</option>' +
+                '<option style = "color:black" value = "Reemplazo de Gerente"                  >Remplazo de Gerente</option>';
+        } else if (dato == "GP") {
+            document.getElementById('facultad').innerHTML = "" +
+                '<option style = "color:black" value = ""                                              >-</option>' +
+                '<option style = "color:black" value = "Reemplazo de Gerente"                  >Remplazo de Gerente</option>' +
+                '<option style = "color:black" value = "Compra-Venta ME"                >Compra-Venta ME</option>' +
+                '<option style = "color:black" value = "Reemplazo de Gerente"                  >Remplazo de Gerente</option>';
+        } else if (dato == "MP") {
+            document.getElementById('facultad').innerHTML = "" +
+                '<option style = "color:black" value = ""                                              >-</option>' +
+                '<option style = "color:black" value = "Linea de Credito TC"                >Linea de Credito TC</option>' +
+                '<option style = "color:black" value = "Cargos TC"                          >Cargos TC</option>' +
+                '<option style = "color:black" value = "Abonos TC"                          >Abonos TC</option>' +
+                '<option style = "color:black" value = "Reemplazo de Gerente"                  >Remplazo de Gerente</option>';
+        } else if (dato == "UA") {
+            document.getElementById('facultad').innerHTML = "" +
+                '<option style = "color:black" value = ""                                              >-</option>' +
+                '<option style = "color:black" value = "Emision de  CF"                     >Emision de CF</option>' +
+                '<option style = "color:black" value = "Prorroga de CF por deuda"           >Prorroga de CF por deuda</option>' +
+                '<option style = "color:black" value = "Honramiento de CF"                          >Honramiento de CF</option>' +
+                '<option style = "color:black" value = "Reemplazo de Gerente"                  >Remplazo de Gerente</option>';
+        } else if (dato == "UG") {
+            document.getElementById('facultad').innerHTML = "" +
+                '<option style = "color:black" value = ""                                              >-</option>' +
+                '<option style = "color:black" value = "Prestamo Comercial"                  >Prestamo Comercial</option>' +
+                '<option style = "color:black" value = "Prestamo Micro Empresa"              >Prestamo Micro Empresa</option>' +
+                '<option style = "color:black" value = "Prestamo Refinanciado de Consumo y TARJETAS">Prestamo Refinanciado de Consumo y TARJETAS</option>' +
+                '<option style = "color:black" value = "Prestamo Personal"                   >Prestamo Personal</option>' +
+                '<option style = "color:black" value = "Prestamo con garantia Super Deposito">Prestamo con garantia Super Deposito</option>' +
+                '<option style = "color:black" value = "Prestamo Hipotecario"                >Prestamo Hipotecario</option>' +
+                '<option style = "color:black" value = "Reemplazo de Gerente"                  >Remplazo de Gerente</option>';
+        }
+
+    }
+
+
+
+
+    // PROCEDIMIENTOS PARA LIMITES OPERATIVOS 
+    // ACTUALIZAR INFORMACIÓN DEL SELECTION 
+
+    function actualizar_selection_cruce_partidas() {
+        var dato = document.getElementById('cruce_partida').value;
+        if (dato == "Sobrante de Caja - Soles") {
+            document.getElementById('cuenta_contable_cargo').value = "29.12.01.05";
+            //document.getElementById('cuenta_contable_abono').value = "";
+        }
+        if (dato == "Sobrante de ATMs - Soles") {
+            document.getElementById('cuenta_contable_cargo').value = "29.12.01.05";
+            //document.getElementById('cuenta_contable_abono').value = "";
+        }
+        if (dato == "Sobrante de Caja - Dólares") {
+            document.getElementById('cuenta_contable_cargo').value = "29.12.01.06";
+            //document.getElementById('cuenta_contable_abono').value = "";
+        }
+        if (dato == "Sobrante de ATMs - Dólares") {
+            document.getElementById('cuenta_contable_cargo').value = "29.12.01.06";
+            //document.getElementById('cuenta_contable_abono').value = "";
+        }
+
+    }
+
+    function reflejar_importe_abono() {
+        var dato = document.getElementById('importe_cargo').value;
+        document.getElementById('importe_abono').value = dato;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //MODIFICACION EN BASE DE DATOS DE PERSONA JURIDICA 
+    //ACTUALIZAR CAMPOS SEGÚN TIPO DE PROCESO----------------------------------------------------------------------------------------
+    function actualizar_disabled_tipo_proceso() {
+        var valor_actualizar = document.getElementById('tipo_proceso').value;
+
+        document.getElementById('conjunto_absorcion').style.opacity = 0.2;
+
+        document.getElementById('cod_central1').disabled = true;
+        document.getElementById('cod_central1').value = "";
+        document.getElementById('razon_social1').disabled = true;
+        document.getElementById('razon_social1').value = "";
+
+        document.getElementById('cod_central2').disabled = true;
+        document.getElementById('cod_central2').value = "";
+        document.getElementById('razon_social2').disabled = true;
+        document.getElementById('razon_social2').value = "";
+
+        if (valor_actualizar == "004 FUSIÓN POR ABSORCIÓN") {
+            document.getElementById('conjunto_absorcion').style.opacity = 1;
+
+            document.getElementById('cod_central1').disabled = false;
+            document.getElementById('razon_social1').disabled = false;
+
+            document.getElementById('cod_central2').disabled = false;
+            document.getElementById('razon_social2').disabled = false;
+
+        } else {
+
+        }
+    }
+
+
+
+    //GUARDAR INFORMACIÓN DE MODIFICACION DE BD DE PERSONA JURIDICA----------------------------------------------------------------------------------------
+    function ingresar_solicitud_mod_bd_pj() {
+        try {
+
+            document.getElementById('titulo_registro').style.color = "#004481";
+            document.getElementById('titulo_tipo_proceso').style.color = "#004481";
+            document.getElementById('titulo_cod_central').style.color = "#004481";
+            document.getElementById('titulo_razon_social').style.color = "#004481";
+            document.getElementById('titulo_cod_central1').style.color = "#004481";
+            document.getElementById('titulo_razon_social1').style.color = "#004481";
+            document.getElementById('titulo_cod_central2').style.color = "#004481";
+            document.getElementById('titulo_razon_social2').style.color = "#004481";
+            document.getElementById('titulo_instrucciones').style.color = "#004481";
+
+            document.getElementById('res_ingresar_solicitud').innerHTML = "";
+            document.getElementById('res_ingresar_solicitud').style.color = "white";
+            document.getElementById('res_ingresar_solicitud').style.background = "#02A5A5";
+            document.getElementById('ingresar_solicitud').style.background = "#02A5A5";
+
+
+            //LOG
+            if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+                var valor = document.getElementById('pw_error').innerHTML;
+                document.getElementById('pw_error').innerHTML = valor + "<br>formato titulos completo";
+            }
+
+            var regi = document.getElementById('registro').value;
+            var tppr = document.getElementById('tipo_proceso').value;
+            var cdcn = document.getElementById('cod_central').value;
+            var rzsc = document.getElementById('razon_social').value;
+            var cdc1 = document.getElementById('cod_central').value;
+            var rzs1 = document.getElementById('razon_social').value;
+            var cdc2 = document.getElementById('cod_central').value;
+            var rzs2 = document.getElementById('razon_social').value;
+            var inst = document.getElementById('instrucciones').value;
+
+            var texto_notificacion = '' +
+                '<div class="fila"><div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style = "padding: 0px 10px 0px 10px;text-align: left;">Registro: </div>' +
+                '<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style = "padding: 0px 10px 0px 10px;text-align: left;">' + regi + '</div></div>' +
+                '<div class="fila"><div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style = "padding: 0px 10px 0px 10px;text-align: left;">Tipo de proceso: </div>' +
+                '<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style = "padding: 0px 10px 0px 10px;text-align: left;">' + tppr + '</div></div>' +
+                '<div class="fila"><div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style = "padding: 0px 10px 0px 10px;text-align: left;">Código Central: </div>' +
+                '<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style = "padding: 0px 10px 0px 10px;text-align: left;">' + cdcn + '</div></div>' +
+                '<div class="fila"><div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style = "padding: 0px 10px 0px 10px;text-align: left;">Razón Social: </div>' +
+                '<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style = "padding: 0px 10px 0px 10px;text-align: left;">' + rzsc + '</div></div>' +
+                '<div class="fila"><div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style = "padding: 0px 10px 0px 10px;text-align: left;">Código Central Absorvida 1: </div>' +
+                '<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style = "padding: 0px 10px 0px 10px;text-align: left;">' + cdc1 + '</div></div>' +
+                '<div class="fila"><div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style = "padding: 0px 10px 0px 10px;text-align: left;">Razón Social Absorvida 1: </div>' +
+                '<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style = "padding: 0px 10px 0px 10px;text-align: left;">' + rzs1 + '</div></div>' +
+                '<div class="fila"><div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style = "padding: 0px 10px 0px 10px;text-align: left;">Código Central Absorvida 2: </div>' +
+                '<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style = "padding: 0px 10px 0px 10px;text-align: left;">' + cdc2 + '</div></div>' +
+                '<div class="fila"><div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style = "padding: 0px 10px 0px 10px;text-align: left;">Razón Social Absorvida 2: </div>' +
+                '<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style = "padding: 0px 10px 0px 10px;text-align: left;">' + rzs2 + '</div></div>' +
+                '<div class="fila"><div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style = "padding: 0px 10px 0px 10px;text-align: left;">Instrucciones: </div>' +
+                '<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style = "padding: 0px 10px 0px 10px;text-align: left;">' + inst + '</div></div>';
+
+            if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+                var valor = document.getElementById('pw_error').innerHTML;
+                document.getElementById('pw_error').innerHTML = valor + "<br>valores capturados";
+            }
+
+            var validacion_llenado = true;
+
+
+            if (regi == "") {
+                document.getElementById('titulo_registro').style.color = "#DA3851";
+                validacion_llenado = false;
+            };
+            if (tppr == "") {
+                document.getElementById('titulo_tipo_proceso').style.color = "#DA3851";
+                validacion_llenado = false;
+            };
+            if (cdcn == "") {
+                document.getElementById('titulo_cod_central').style.color = "#DA3851";
+                validacion_llenado = false;
+            };
+            if (rzsc == "") {
+                document.getElementById('titulo_razon_social').style.color = "#DA3851";
+                validacion_llenado = false;
+            };
+
+            if (tppr == "004 FUSIÓN POR ABSORCIÓN" && cdc1 == "") {
+                document.getElementById('titulo_cod_central1').style.color = "#DA3851";
+                validacion_llenado = false;
+            };
+            if (tppr == "004 FUSIÓN POR ABSORCIÓN" && rzs1 == "") {
+                document.getElementById('titulo_razon_social1').style.color = "#DA3851";
+                validacion_llenado = false;
+            };
+
+            if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+                var valor = document.getElementById('pw_error').innerHTML;
+                document.getElementById('pw_error').innerHTML = valor + "<br>validaciones iniciales";
+            }
+
+
+            if (validacion_llenado == false) {
+                document.getElementById('res_ingresar_solicitud').innerHTML = "* Completar información";
+                document.getElementById('res_ingresar_solicitud').style.color = "white";
+                document.getElementById('res_ingresar_solicitud').style.background = "#DA3851";
+                document.getElementById('ingresar_solicitud').style.background = "#DA3851";
+                return;
+            };
+
+            if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+                var valor = document.getElementById('pw_error').innerHTML;
+                document.getElementById('pw_error').innerHTML = valor + "<br>campos vacíos validados";
+            }
+
+            var ult_fila = 1;
+            var columnas = 8;
+            //crear una cantidad de filas para la matriz tomando en cuenta que la primera fila es de orden 0
+            var Matriz_information = new Array(ult_fila);
+            //recorrer todas las filas
+            for (var fila = 0; fila < ult_fila; fila++) {
+                //crear cantidad de columnas para cada una de las filas
+                Matriz_information[fila] = new Array(columnas);
+
+                //guardaremos para cada fila la misma información general
+                Matriz_information[fila][0] = regi;
+                Matriz_information[fila][1] = tppr;
+                Matriz_information[fila][2] = cdcn;
+                Matriz_information[fila][3] = rzsc;
+                Matriz_information[fila][4] = cdc1;
+                Matriz_information[fila][5] = rzs1;
+                Matriz_information[fila][6] = cdc2;
+                Matriz_information[fila][7] = rzs2;
+                Matriz_information[fila][8] = inst;
+
+            };
+
+            if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+                var valor = document.getElementById('pw_error').innerHTML;
+                document.getElementById('pw_error').innerHTML = valor + "<br>Matriz generada";
+            }
+            google.script.run.CargaInf_Mod_BD_PJ(Matriz_information);
+
+
+            document.getElementById('cod_oficina').value = "";
+            document.getElementById('tipo_solicitud').value = "";
+            document.getElementById('tipo_producto').value = "";
+            document.getElementById('cod_central').value = "";
+
+            document.getElementById('oficina').value = "";
+            document.getElementById('cod_prestamo').value = "";
+            document.getElementById('mensaje_error').value = "";
+            try {
+                document.getElementById('otro_mensaje_error').value = "";
+            } catch (e) {}; //modular
+            document.getElementById('tipo_operacion').value = "";
+            try {
+                document.getElementById('otro_tipo_operacion').value = "";
+            } catch (e) {}; //modular
+            try {
+                document.getElementById('aplicar_cuota').value = "";
+            } catch (e) {}; //modular
+            try {
+                document.getElementById('cantidad_cuotas').value = "";
+            } catch (e) {}; //modular
+            try {
+                document.getElementById('pago_fecha_valor').value = "";
+            } catch (e) {}; //modular
+            try {
+                document.getElementById('oficina_cc').value = "";
+            } catch (e) {}; //modular
+            try {
+                document.getElementById('cod_prestamo_cc').value = "";
+            } catch (e) {}; //modular
+            try {
+                document.getElementById('mes_pagar').value = "";
+            } catch (e) {}; //modular
+
+            if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+                var valor = document.getElementById('pw_error').innerHTML;
+                document.getElementById('pw_error').innerHTML = valor + "<br>Campos limpiados";
+            }
+            document.getElementById('res_ingresar_solicitud').innerHTML = "* Información cargada";
+            document.getElementById('res_ingresar_solicitud').style.color = "white";
+            document.getElementById('res_ingresar_solicitud').style.background = "#48AE64";
+            document.getElementById('ingresar_solicitud').style.background = "#48AE64";
+
+            if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+                var valor = document.getElementById('pw_error').innerHTML;
+                document.getElementById('pw_error').innerHTML = valor + "<br>Formato listo";
+            }
+
+            document.getElementById('pw_notificacion').innerHTML = '' +
+                '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>' +
+                '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navegador3">' +
+                '  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">' +
+                '    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">' +
+                '      Solicitud ingresada correctamente' +
+                '    </div>' + texto_notificacion +
+                '    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>' +
+                '    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">' +
+                '      <button onclick = "limpiar_notificacion();"' +
+                '              class="col-lg-12 col-md-12 col-sm-12 col-xs-12 button_notificacion casilla_boton_ingreso texto_centrado" ' +
+                '              id="id_limpiar_notificacion">' +
+                '        <b>Aceptar</b><br>' +
+                '      </button>' +
+                '    </div>' +
+                '  </div>' +
+                '</div>';
+
+
+        } catch (mensaje_error) {
+            if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+                var valor = document.getElementById('pw_error').innerHTML;
+                document.getElementById('pw_error').innerHTML = valor + "<br>error: " + mensaje_error;
+            }
+
+        };
+    };
+
+
+
+
+
+
+
+
+
+    //GUARDAR INFORMACIÓN DE CTS RETENCIONES JUDICIALES----------------------------------------------------------------------------------------
+    function ingresar_solicitud_cts_retenciones() {
+        try {
+
+            document.getElementById('titulo_cod_oficina').style.color = "#004481";
+            document.getElementById('titulo_oficina').style.color = "#004481";
+            document.getElementById('titulo_tipo_documento').style.color = "#004481";
+            document.getElementById('titulo_nro_documento').style.color = "#004481";
+            document.getElementById('titulo_apellidos').style.color = "#004481";
+            document.getElementById('titulo_nombres').style.color = "#004481";
+            document.getElementById('titulo_cuenta_cts').style.color = "#004481";
+
+            document.getElementById('res_ingresar_solicitud').innerHTML = "";
+            document.getElementById('res_ingresar_solicitud').style.color = "white";
+            document.getElementById('res_ingresar_solicitud').style.background = "#02A5A5";
+            document.getElementById('ingresar_solicitud').style.background = "#02A5A5";
+
+            //LOG
+            if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+                var valor = document.getElementById('pw_error').innerHTML;
+                document.getElementById('pw_error').innerHTML = valor + "<br>formato titulos completo";
+            }
+
+            var cdof = document.getElementById('cod_oficina').value;
+            var ofic = document.getElementById('oficina').value;
+            var tpdc = document.getElementById('tipo_documento').value;
+            var nrdc = document.getElementById('nro_documento').value;
+            var apel = document.getElementById('apellidos').value;
+            var nomb = document.getElementById('nombres').value;
+            var ccts = document.getElementById('cuenta_cts').value;
+
+            var texto_notificacion = '' +
+                '<div class="fila"><div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style = "padding: 0px 10px 0px 10px;text-align: left;">Código de oficina: </div>' +
+                '<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style = "padding: 0px 10px 0px 10px;text-align: left;">' + cdof + '</div></div>' +
+                '<div class="fila"><div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style = "padding: 0px 10px 0px 10px;text-align: left;">Oficina: </div>' +
+                '<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style = "padding: 0px 10px 0px 10px;text-align: left;">' + ofic + '</div></div>' +
+                '<div class="fila"><div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style = "padding: 0px 10px 0px 10px;text-align: left;">Tipo de documento: </div>' +
+                '<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style = "padding: 0px 10px 0px 10px;text-align: left;">' + tpdc + '</div></div>' +
+                '<div class="fila"><div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style = "padding: 0px 10px 0px 10px;text-align: left;">Nro de documento: </div>' +
+                '<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style = "padding: 0px 10px 0px 10px;text-align: left;">' + nrdc + '</div></div>' +
+                '<div class="fila"><div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style = "padding: 0px 10px 0px 10px;text-align: left;">Apellidos: </div>' +
+                '<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style = "padding: 0px 10px 0px 10px;text-align: left;">' + apel + '</div></div>' +
+                '<div class="fila"><div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style = "padding: 0px 10px 0px 10px;text-align: left;">Nombres: </div>' +
+                '<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style = "padding: 0px 10px 0px 10px;text-align: left;">' + nomb + '</div></div>' +
+                '<div class="fila"><div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style = "padding: 0px 10px 0px 10px;text-align: left;">Cuenta CTS: </div>' +
+                '<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style = "padding: 0px 10px 0px 10px;text-align: left;">' + ccts + '</div></div>';
+
+            if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+                var valor = document.getElementById('pw_error').innerHTML;
+                document.getElementById('pw_error').innerHTML = valor + "<br>valores capturados";
+            }
+
+            var validacion_llenado = true;
+
+            if (cdof == "") {
+                document.getElementById('titulo_cod_oficina').style.color = "#DA3851";
+                validacion_llenado = false;
+            };
+            if (ofic == "") {
+                document.getElementById('titulo_oficina').style.color = "#DA3851";
+                validacion_llenado = false;
+            };
+            if (tpdc == "") {
+                document.getElementById('titulo_tipo_documento').style.color = "#DA3851";
+                validacion_llenado = false;
+            };
+            if (nrdc == "") {
+                document.getElementById('titulo_nro_documento').style.color = "#DA3851";
+                validacion_llenado = false;
+            };
+            if (apel == "") {
+                document.getElementById('titulo_apellidos').style.color = "#DA3851";
+                validacion_llenado = false;
+            };
+            if (nomb == "") {
+                document.getElementById('titulo_nombres').style.color = "#DA3851";
+                validacion_llenado = false;
+            };
+            if (ccts == "") {
+                document.getElementById('titulo_cuenta_cts').style.color = "#DA3851";
+                validacion_llenado = false;
+            };
+
+            if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+                var valor = document.getElementById('pw_error').innerHTML;
+                document.getElementById('pw_error').innerHTML = valor + "<br>validaciones iniciales";
+            }
+
+            if (validacion_llenado == false) {
+                document.getElementById('res_ingresar_solicitud').innerHTML = "* Completar información";
+                document.getElementById('res_ingresar_solicitud').style.color = "white";
+                document.getElementById('res_ingresar_solicitud').style.background = "#DA3851";
+                document.getElementById('ingresar_solicitud').style.background = "#DA3851";
+                return;
+            };
+
+            if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+                var valor = document.getElementById('pw_error').innerHTML;
+                document.getElementById('pw_error').innerHTML = valor + "<br>campos vacíos validados";
+            }
+
+            var ult_fila = 1;
+            var columnas = 6;
+            //crear una cantidad de filas para la matriz tomando en cuenta que la primera fila es de orden 0
+            var Matriz_information = new Array(ult_fila);
+            //recorrer todas las filas
+            for (var fila = 0; fila < ult_fila; fila++) {
+                //crear cantidad de columnas para cada una de las filas
+                Matriz_information[fila] = new Array(columnas);
+
+                //guardaremos para cada fila la misma información general
+                Matriz_information[fila][0] = cdof;
+                Matriz_information[fila][1] = ofic;
+                Matriz_information[fila][2] = tpdc;
+                Matriz_information[fila][3] = nrdc;
+                Matriz_information[fila][4] = apel;
+                Matriz_information[fila][5] = nomb;
+                Matriz_information[fila][6] = ccts;
+
+            };
+
+            if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+                var valor = document.getElementById('pw_error').innerHTML;
+                document.getElementById('pw_error').innerHTML = valor + "<br>Matriz generada";
+            }
+            google.script.run.CargaInf_CTS_Retenciones(Matriz_information);
+
+
+            document.getElementById('cod_oficina').value = "";
+            document.getElementById('tipo_solicitud').value = "";
+            document.getElementById('tipo_producto').value = "";
+            document.getElementById('cod_central').value = "";
+
+            document.getElementById('oficina').value = "";
+            document.getElementById('cod_prestamo').value = "";
+            document.getElementById('mensaje_error').value = "";
+            try {
+                document.getElementById('otro_mensaje_error').value = "";
+            } catch (e) {}; //modular
+            document.getElementById('tipo_operacion').value = "";
+            try {
+                document.getElementById('otro_tipo_operacion').value = "";
+            } catch (e) {}; //modular
+            try {
+                document.getElementById('aplicar_cuota').value = "";
+            } catch (e) {}; //modular
+            try {
+                document.getElementById('cantidad_cuotas').value = "";
+            } catch (e) {}; //modular
+            try {
+                document.getElementById('pago_fecha_valor').value = "";
+            } catch (e) {}; //modular
+            try {
+                document.getElementById('oficina_cc').value = "";
+            } catch (e) {}; //modular
+            try {
+                document.getElementById('cod_prestamo_cc').value = "";
+            } catch (e) {}; //modular
+            try {
+                document.getElementById('mes_pagar').value = "";
+            } catch (e) {}; //modular
+
+            if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+                var valor = document.getElementById('pw_error').innerHTML;
+                document.getElementById('pw_error').innerHTML = valor + "<br>Campos limpiados";
+            }
+            document.getElementById('res_ingresar_solicitud').innerHTML = "* Información cargada";
+            document.getElementById('res_ingresar_solicitud').style.color = "white";
+            document.getElementById('res_ingresar_solicitud').style.background = "#48AE64";
+            document.getElementById('ingresar_solicitud').style.background = "#48AE64";
+
+            if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+                var valor = document.getElementById('pw_error').innerHTML;
+                document.getElementById('pw_error').innerHTML = valor + "<br>Formato listo";
+            }
+
+            document.getElementById('pw_notificacion').innerHTML = '' +
+                '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>' +
+                '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navegador3">' +
+                '  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">' +
+                '    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">' +
+                '      Solicitud ingresada correctamente' +
+                '    </div>' + texto_notificacion +
+                '    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>' +
+                '    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">' +
+                '      <button onclick = "limpiar_notificacion();"' +
+                '              class="col-lg-12 col-md-12 col-sm-12 col-xs-12 button_notificacion casilla_boton_ingreso texto_centrado" ' +
+                '              id="id_limpiar_notificacion">' +
+                '        <b>Aceptar</b><br>' +
+                '      </button>' +
+                '    </div>' +
+                '  </div>' +
+                '</div>';
+
+
+        } catch (mensaje_error) {
+            if (document.getElementById('pw_acceso').innerHTML == "Acceso desarrollador") {
+                var valor = document.getElementById('pw_error').innerHTML;
+                document.getElementById('pw_error').innerHTML = valor + "<br>error: " + mensaje_error;
+            }
+
+        };
+    };
+</script>

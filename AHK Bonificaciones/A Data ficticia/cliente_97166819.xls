@@ -1,0 +1,1226 @@
+
+
+<head>
+    <meta charset='utf-8'/>
+    <title>Consulta de Clientes y Productos</title>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta content='width=device-width, initial-scale=1' name='viewport''/>
+    <meta content='' name='description'/>
+    <meta content='' name='author'/>
+</head>
+
+ 
+ <table class=table table-hover style=width: 2800px; font-size: 11px><thead>
+					<tr style=background-color:#0065BA ; color=#FDFEFE>
+				       <th><font color=white size=2>CLIENTE</font></th>         
+					       <th><font color=white>Documento</font></th>            
+					      <th><font color=white>Calificación</font></th>     
+					      <th><font color=white>Ap. paterno</font></th>
+					      <th><font color=white>Ap. materno</font></th>
+					      <th><font color=white>Nombre / Razón Social</font></th>
+					      <th><font color=white>Nombre tarjeta</font></th>
+					      <th><font color=white>Giro del negocio</font></th>
+					       <th><font color=white>Fec. de nacimiento</font></th>
+					       <th><font color=white>Pais nacimiento</font></th>
+					      <th><font color=white>Sector</font></th>
+					       <th><font color=white>Sexo</font></th>
+					       <th><font color=white>Estado Civil</font></th>
+					       <th><font color=white>Ind. cliente</font></th>
+					       <th><font color=white>Título cliente</font></th>
+					       <th><font color=white>Fec. alta</font></th>
+					       <th><font color=white></font></th>										
+					      <th><font color=white></font></th>										
+				          <th><font color=white></font></th>										
+					      <th><font color=white></font></th>										
+					       <th><font color=white></font></th>									
+					      <th><font color=white></font></th>										
+					      <th><font color=white></font></th>										
+					       <th><font color=white></font></th>										
+					       <th><font color=white></font></th>										
+					      <th><font color=white></font></th>										
+					      <th><font color=white></font></th>										
+					       <th><font color=white></font></th>									
+					</tr>
+					</thead>
+					<tbody><tr>
+				<td><FONT FACE=Sefif>97166819</FONT></td>
+				<td><FONT FACE=Sefif>L-76490025</FONT></td>
+				<td><FONT FACE=Sefif>---SIN CALIFIC</FONT></td>
+				<td><FONT FACE=Sefif>VELEZMORO</FONT></td>
+				<td><FONT FACE=Sefif>SUAREZ</FONT></td>
+				<td><FONT FACE=Sefif>ALICE MARGARITA</FONT></td>
+				<td><FONT FACE=Sefif>VELEZMORO SUAREZ ALIC</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>1985-02-26</FONT></td>
+				<td><FONT FACE=Sefif>PER</FONT></td>
+				<td><FONT FACE=Sefif>F00</FONT></td>
+				<td><FONT FACE=Sefif>F</FONT></td>
+				<td><FONT FACE=Sefif>C</FONT></td>
+				<td><FONT FACE=Sefif>S</FONT></td>
+				<td><FONT FACE=Sefif>SRA.</FONT></td>
+				<td><FONT FACE=Sefif>2019-05-07</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				</tr>
+				 </tbody><thead>
+					<tr>
+					       <th></th>
+					       <th style=background-color:#9BE1FB><font color=black size=2>TARJETAS</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Tipo Tarjeta</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Contrato</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>N° Tarjeta</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>L.C. Contrato</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>L.C. Tarjeta</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Utilizado</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Utilizado cuotas</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Utilizado bimoneda</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Utilizado cuota bimoneda</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Fec. vcto.</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Bloqueo preventivo</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Moneda</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Titular</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Cuenta cargo</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Acceso cuentas</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Retención</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Interés comisión</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Interés comisión bimoneda</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Línea temporal</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Interés aplazado</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Fec. último movimiento</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>N° de movimientos</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Fec. Alta</font></th>
+					       <th style=background-color:#9BE1FB><font color=black></font></th>
+					       <th style=background-color:#9BE1FB><font color=black></font></th>
+					       <th style=background-color:#9BE1FB><font color=black></font></th>
+
+					</tr>
+					</thead>
+					<tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>02-VISA CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>P1-V PLATINUM SOLES</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011253457</FONT></td>
+				<td><FONT FACE=Sefif>'4919148000126143</FONT></td>
+				<td><FONT FACE=Sefif>'75000.00</FONT></td>
+				<td><FONT FACE=Sefif>'75000.00</FONT></td>
+				<td><FONT FACE=Sefif>'4666.47</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'4374.19</FONT></td>
+				<td><FONT FACE=Sefif>'2025-02-28</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'T01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'A</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'176.47</FONT></td>
+				<td><FONT FACE=Sefif>'79.19</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>0.00</FONT></td>
+				<td><FONT FACE=Sefif>2020-03-09</FONT></td>
+				<td><FONT FACE=Sefif>12</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-03</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>02-VISA CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>P2-V PLATINUM DOLAR</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011252868</FONT></td>
+				<td><FONT FACE=Sefif>'4919148000124213</FONT></td>
+				<td><FONT FACE=Sefif>'60000.00</FONT></td>
+				<td><FONT FACE=Sefif>'60000.00</FONT></td>
+				<td><FONT FACE=Sefif>'3355.12</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'2025-02-28</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'USD</FONT></td>
+				<td><FONT FACE=Sefif>'T01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'A</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'281.78</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>0.00</FONT></td>
+				<td><FONT FACE=Sefif>2020-03-02</FONT></td>
+				<td><FONT FACE=Sefif>12</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-03</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>02-VISA CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>P1-V PLATINUM SOLES</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011253449</FONT></td>
+				<td><FONT FACE=Sefif>'4919148000126135</FONT></td>
+				<td><FONT FACE=Sefif>'70000.00</FONT></td>
+				<td><FONT FACE=Sefif>'70000.00</FONT></td>
+				<td><FONT FACE=Sefif>'3563.85</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'2025-02-28</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'D01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'D</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'179.25</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>0.00</FONT></td>
+				<td><FONT FACE=Sefif>2020-03-09</FONT></td>
+				<td><FONT FACE=Sefif>10</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-03</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>02-VISA CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>O2-ORO USD</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011252558</FONT></td>
+				<td><FONT FACE=Sefif>'4919118000123663</FONT></td>
+				<td><FONT FACE=Sefif>'55000.00</FONT></td>
+				<td><FONT FACE=Sefif>'55000.00</FONT></td>
+				<td><FONT FACE=Sefif>'9707.76</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'2025-02-28</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'USD</FONT></td>
+				<td><FONT FACE=Sefif>'D01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'D</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'379.42</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>230.00</FONT></td>
+				<td><FONT FACE=Sefif>2020-03-02</FONT></td>
+				<td><FONT FACE=Sefif>10</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-03</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>07-MC CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>MO-MASTERCARD ORO</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011239535</FONT></td>
+				<td><FONT FACE=Sefif>'5124098000098818</FONT></td>
+				<td><FONT FACE=Sefif>'20000.00</FONT></td>
+				<td><FONT FACE=Sefif>'20000.00</FONT></td>
+				<td><FONT FACE=Sefif>'500.00</FONT></td>
+				<td><FONT FACE=Sefif>'1100.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'330.00</FONT></td>
+				<td><FONT FACE=Sefif>'2022-10-31</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'T01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'A</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>1553.70</FONT></td>
+				<td><FONT FACE=Sefif>2020-01-07</FONT></td>
+				<td><FONT FACE=Sefif>5</FONT></td>
+				<td><FONT FACE=Sefif>2019-10-17</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>07-MC CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>VS-MC BLACK USD</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011253287</FONT></td>
+				<td><FONT FACE=Sefif>'5536508000124978</FONT></td>
+				<td><FONT FACE=Sefif>'54000.00</FONT></td>
+				<td><FONT FACE=Sefif>'54000.00</FONT></td>
+				<td><FONT FACE=Sefif>'13537.68</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'2023-02-28</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'USD</FONT></td>
+				<td><FONT FACE=Sefif>'T01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'A</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'1904.10</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>11597.68</FONT></td>
+				<td><FONT FACE=Sefif>2020-03-02</FONT></td>
+				<td><FONT FACE=Sefif>15</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-03</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>02-VISA CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>T3-BFREE PEN</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011253473</FONT></td>
+				<td><FONT FACE=Sefif>'4919098000126199</FONT></td>
+				<td><FONT FACE=Sefif>'60000.00</FONT></td>
+				<td><FONT FACE=Sefif>'60000.00</FONT></td>
+				<td><FONT FACE=Sefif>'5700.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'2025-02-28</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'D01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'D</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'18.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>0.00</FONT></td>
+				<td><FONT FACE=Sefif>2020-03-02</FONT></td>
+				<td><FONT FACE=Sefif>6</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-03</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>02-VISA CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>O1-ORO PEN</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011223833</FONT></td>
+				<td><FONT FACE=Sefif>'4919118000062978</FONT></td>
+				<td><FONT FACE=Sefif>'18000.00</FONT></td>
+				<td><FONT FACE=Sefif>'18000.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'2022-05-31</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'T01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'A</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>0.00</FONT></td>
+				<td><FONT FACE=Sefif>2019-05-07</FONT></td>
+				<td><FONT FACE=Sefif>1</FONT></td>
+				<td><FONT FACE=Sefif>2019-05-07</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>07-MC CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>MR-MC ORO C PEN</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011253139</FONT></td>
+				<td><FONT FACE=Sefif>'5124098000124721</FONT></td>
+				<td><FONT FACE=Sefif>'55000.00</FONT></td>
+				<td><FONT FACE=Sefif>'55000.00</FONT></td>
+				<td><FONT FACE=Sefif>'4396.05</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'2023-02-28</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'D01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'D</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'245.90</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>2626.05</FONT></td>
+				<td><FONT FACE=Sefif>2020-03-04</FONT></td>
+				<td><FONT FACE=Sefif>6</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-03</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>02-VISA CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>X2-SIGNATURE USD</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011239411</FONT></td>
+				<td><FONT FACE=Sefif>'4147918000100882</FONT></td>
+				<td><FONT FACE=Sefif>'20000.00</FONT></td>
+				<td><FONT FACE=Sefif>'20000.00</FONT></td>
+				<td><FONT FACE=Sefif>'1508.17</FONT></td>
+				<td><FONT FACE=Sefif>'2167.16</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'2024-10-31</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'USD</FONT></td>
+				<td><FONT FACE=Sefif>'T01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'A</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>607.16</FONT></td>
+				<td><FONT FACE=Sefif>2020-01-07</FONT></td>
+				<td><FONT FACE=Sefif>48</FONT></td>
+				<td><FONT FACE=Sefif>2018-11-04</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>02-VISA CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>P1-V PLATINUM SOLES</FONT></td>
+				<td><FONT FACE=Sefif>'001101995001144656</FONT></td>
+				<td><FONT FACE=Sefif>'4919148000125160</FONT></td>
+				<td><FONT FACE=Sefif>'60000.00</FONT></td>
+				<td><FONT FACE=Sefif>'60000.00</FONT></td>
+				<td><FONT FACE=Sefif>'5500.40</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'2980.90</FONT></td>
+				<td><FONT FACE=Sefif>'2025-02-28</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'D01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'D</FONT></td>
+				<td><FONT FACE=Sefif>'0.48</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>10558.48</FONT></td>
+				<td><FONT FACE=Sefif>2020-03-10</FONT></td>
+				<td><FONT FACE=Sefif>4</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-03</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>02-VISA CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>C4-CLASICA LOC USD</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011252442</FONT></td>
+				<td><FONT FACE=Sefif>'4042938000123466</FONT></td>
+				<td><FONT FACE=Sefif>'55000.00</FONT></td>
+				<td><FONT FACE=Sefif>'55000.00</FONT></td>
+				<td><FONT FACE=Sefif>'8439.20</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'2023-02-28</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'USD</FONT></td>
+				<td><FONT FACE=Sefif>'D01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'D</FONT></td>
+				<td><FONT FACE=Sefif>'0.25</FONT></td>
+				<td><FONT FACE=Sefif>'200.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>5859.25</FONT></td>
+				<td><FONT FACE=Sefif>2020-03-10</FONT></td>
+				<td><FONT FACE=Sefif>4</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-03</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>02-VISA CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>X2-SIGNATURE USD</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011253783</FONT></td>
+				<td><FONT FACE=Sefif>'4147918000126804</FONT></td>
+				<td><FONT FACE=Sefif>'66000.00</FONT></td>
+				<td><FONT FACE=Sefif>'66000.00</FONT></td>
+				<td><FONT FACE=Sefif>'2197.64</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'2025-02-28</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'USD</FONT></td>
+				<td><FONT FACE=Sefif>'T01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'A</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'141.36</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>0.00</FONT></td>
+				<td><FONT FACE=Sefif>2020-03-09</FONT></td>
+				<td><FONT FACE=Sefif>7</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-03</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>07-MC CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>VS-MC BLACK USD</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011253279</FONT></td>
+				<td><FONT FACE=Sefif>'5536508000124960</FONT></td>
+				<td><FONT FACE=Sefif>'55000.00</FONT></td>
+				<td><FONT FACE=Sefif>'55000.00</FONT></td>
+				<td><FONT FACE=Sefif>'13300.74</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'2023-02-28</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'USD</FONT></td>
+				<td><FONT FACE=Sefif>'D01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'D</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'1080.24</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>12200.74</FONT></td>
+				<td><FONT FACE=Sefif>2020-03-02</FONT></td>
+				<td><FONT FACE=Sefif>12</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-03</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>02-VISA CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>P1-V PLATINUM SOLES</FONT></td>
+				<td><FONT FACE=Sefif>'001101995001144664</FONT></td>
+				<td><FONT FACE=Sefif>'4919148000125178</FONT></td>
+				<td><FONT FACE=Sefif>'60000.00</FONT></td>
+				<td><FONT FACE=Sefif>'60000.00</FONT></td>
+				<td><FONT FACE=Sefif>'5820.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'1780.00</FONT></td>
+				<td><FONT FACE=Sefif>'2025-02-28</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'T01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'A</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'171.74</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>0.00</FONT></td>
+				<td><FONT FACE=Sefif>2020-03-02</FONT></td>
+				<td><FONT FACE=Sefif>12</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-03</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>02-VISA CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>T3-BFREE PEN</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011253481</FONT></td>
+				<td><FONT FACE=Sefif>'4919098000126207</FONT></td>
+				<td><FONT FACE=Sefif>'65000.00</FONT></td>
+				<td><FONT FACE=Sefif>'65000.00</FONT></td>
+				<td><FONT FACE=Sefif>'3200.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'2025-02-28</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'T01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'A</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'192.16</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>0.00</FONT></td>
+				<td><FONT FACE=Sefif>2020-03-02</FONT></td>
+				<td><FONT FACE=Sefif>6</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-03</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>07-MC CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>MR-MC ORO C PEN</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011253147</FONT></td>
+				<td><FONT FACE=Sefif>'5124098000124739</FONT></td>
+				<td><FONT FACE=Sefif>'60000.00</FONT></td>
+				<td><FONT FACE=Sefif>'60000.00</FONT></td>
+				<td><FONT FACE=Sefif>'1650.74</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'4100.00</FONT></td>
+				<td><FONT FACE=Sefif>'2023-02-28</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'T01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'A</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'63.74</FONT></td>
+				<td><FONT FACE=Sefif>'114.16</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>0.00</FONT></td>
+				<td><FONT FACE=Sefif>2020-03-09</FONT></td>
+				<td><FONT FACE=Sefif>9</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-03</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>02-VISA CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>V2-LIFE SIGN USD</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011253015</FONT></td>
+				<td><FONT FACE=Sefif>'4140898000124495</FONT></td>
+				<td><FONT FACE=Sefif>'55000.00</FONT></td>
+				<td><FONT FACE=Sefif>'55000.00</FONT></td>
+				<td><FONT FACE=Sefif>'1400.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'2023-02-28</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'USD</FONT></td>
+				<td><FONT FACE=Sefif>'T01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'A</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'138.34</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>0.00</FONT></td>
+				<td><FONT FACE=Sefif>2020-03-09</FONT></td>
+				<td><FONT FACE=Sefif>9</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-03</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>02-VISA CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>P2-V PLATINUM DOLAR</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011252841</FONT></td>
+				<td><FONT FACE=Sefif>'4919148000124205</FONT></td>
+				<td><FONT FACE=Sefif>'70000.00</FONT></td>
+				<td><FONT FACE=Sefif>'70000.00</FONT></td>
+				<td><FONT FACE=Sefif>'550.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'2025-02-28</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'USD</FONT></td>
+				<td><FONT FACE=Sefif>'D01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'D</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'271.64</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>0.00</FONT></td>
+				<td><FONT FACE=Sefif>2020-03-09</FONT></td>
+				<td><FONT FACE=Sefif>10</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-03</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>02-VISA CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>C3-CLASICA LOC PEN</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011252426</FONT></td>
+				<td><FONT FACE=Sefif>'4042938000123425</FONT></td>
+				<td><FONT FACE=Sefif>'45000.00</FONT></td>
+				<td><FONT FACE=Sefif>'45000.00</FONT></td>
+				<td><FONT FACE=Sefif>'2400.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'2600.00</FONT></td>
+				<td><FONT FACE=Sefif>'2025-02-28</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'D01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'D</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'303.68</FONT></td>
+				<td><FONT FACE=Sefif>'103.64</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>0.00</FONT></td>
+				<td><FONT FACE=Sefif>2020-03-02</FONT></td>
+				<td><FONT FACE=Sefif>11</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-03</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>02-VISA CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>O1-ORO PEN</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011224155</FONT></td>
+				<td><FONT FACE=Sefif>'4919118000063208</FONT></td>
+				<td><FONT FACE=Sefif>'18000.00</FONT></td>
+				<td><FONT FACE=Sefif>'18000.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'2022-05-31</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'T01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'A</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>0.00</FONT></td>
+				<td><FONT FACE=Sefif>2019-05-08</FONT></td>
+				<td><FONT FACE=Sefif>1</FONT></td>
+				<td><FONT FACE=Sefif>2019-05-08</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>02-VISA CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>V2-LIFE SIGN USD</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011253007</FONT></td>
+				<td><FONT FACE=Sefif>'4140898000124487</FONT></td>
+				<td><FONT FACE=Sefif>'55000.00</FONT></td>
+				<td><FONT FACE=Sefif>'55000.00</FONT></td>
+				<td><FONT FACE=Sefif>'2117.18</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'2023-02-28</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'USD</FONT></td>
+				<td><FONT FACE=Sefif>'D01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'D</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'240.18</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>0.00</FONT></td>
+				<td><FONT FACE=Sefif>2020-03-09</FONT></td>
+				<td><FONT FACE=Sefif>13</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-03</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><tr> 
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>02-VISA CREDITO</FONT></td>
+				<td><FONT FACE=Sefif>C3-CLASICA LOC PEN</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011252396</FONT></td>
+				<td><FONT FACE=Sefif>'4042938000123375</FONT></td>
+				<td><FONT FACE=Sefif>'55000.00</FONT></td>
+				<td><FONT FACE=Sefif>'55000.00</FONT></td>
+				<td><FONT FACE=Sefif>'1500.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'820.00</FONT></td>
+				<td><FONT FACE=Sefif>'2025-02-28</FONT></td>
+				<td><FONT FACE=Sefif>'---SIN BLOQ</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'T01</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'A</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'260.48</FONT></td>
+				<td><FONT FACE=Sefif>'39.40</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>0.00</FONT></td>
+				<td><FONT FACE=Sefif>2020-03-02</FONT></td>
+				<td><FONT FACE=Sefif>9</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-03</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+                </tr>
+				</tbody><thead>
+					<tr>
+					       <th></th>
+					       <th style=background-color:#9BE1FB><font color=black size=2>SEGUROS</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Tipo de seguro</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Contrato</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Situación</font></th> 
+					       <th style=background-color:#9BE1FB><font color=black>Prima</font></th>  
+					       <th style=background-color:#9BE1FB><font color=black>N° Póliza</font></th>  
+					       <th style=background-color:#9BE1FB><font color=black>CIA-PRO-MOD</font></th>  
+					       <th style=background-color:#9BE1FB><font color=black>Cuenta vinculada</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Moneda</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Duración</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Ofic. titular</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Cuenta cargo</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Garantía contratada</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Fec. contrato</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Fec. vcto.</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Fec. baja</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Fec. anulación</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Gestor</font></th>
+					       <th style=background-color:#9BE1FB><font color=black>Fec. alta</font></th>
+					       <th style=background-color:#9BE1FB><font color=black></font></th>
+					       <th style=background-color:#9BE1FB><font color=black></font></th>
+					       <th style=background-color:#9BE1FB><font color=black></font></th>
+					       <th style=background-color:#9BE1FB><font color=black></font></th>
+					       <th style=background-color:#9BE1FB><font color=black></font></th>
+					       <th style=background-color:#9BE1FB><font color=black></font></th>
+					       <th style=background-color:#9BE1FB><font color=black></font></th>
+					       <th style=background-color:#9BE1FB><font color=black></font></th>
+					       <th></th>             
+					</tr>
+					</thead>
+					<tbody><tr>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>D-DESGRAVAMEN</FONT></td>
+				<td><FONT FACE=Sefif>02-SEG DESGRAVAMEN TARJETA CREDITO USD</FONT></td>
+				<td><FONT FACE=Sefif>'001101304030078643</FONT></td>
+				<td><FONT FACE=Sefif>01-FORMALIZADA</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'253818</FONT></td>
+				<td><FONT FACE=Sefif>'CIA:01- PRO:918- MOD:02</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011252868</FONT></td>
+				<td><FONT FACE=Sefif>'USD</FONT></td>
+				<td><FONT FACE=Sefif>'999.</FONT></td>
+				<td><FONT FACE=Sefif>'0130</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>TP1-COBERTURA SEPELIO</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-24</FONT></td>
+				<td><FONT FACE=Sefif>2065-02-25</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>P121317</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-23</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				</tr>
+				</tbody><tr>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>D-DESGRAVAMEN</FONT></td>
+				<td><FONT FACE=Sefif>02-SEG DESGRAVAMEN TARJETA CREDITO USD</FONT></td>
+				<td><FONT FACE=Sefif>'001101304030072572</FONT></td>
+				<td><FONT FACE=Sefif>01-FORMALIZADA</FONT></td>
+				<td><FONT FACE=Sefif>'2.40</FONT></td>
+				<td><FONT FACE=Sefif>'253818</FONT></td>
+				<td><FONT FACE=Sefif>'CIA:01- PRO:918- MOD:02</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011239411</FONT></td>
+				<td><FONT FACE=Sefif>'USD</FONT></td>
+				<td><FONT FACE=Sefif>'999.</FONT></td>
+				<td><FONT FACE=Sefif>'0130</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>TP1-COBERTURA SEPELIO</FONT></td>
+				<td><FONT FACE=Sefif>2019-10-17</FONT></td>
+				<td><FONT FACE=Sefif>2065-02-25</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>BATCH</FONT></td>
+				<td><FONT FACE=Sefif>2019-11-05</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				</tr>
+				</tbody><tr>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>D-DESGRAVAMEN</FONT></td>
+				<td><FONT FACE=Sefif>01-SEG DESGRAVAMEN TARJETA CREDITO PEN</FONT></td>
+				<td><FONT FACE=Sefif>'001101304030064545</FONT></td>
+				<td><FONT FACE=Sefif>01-FORMALIZADA</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'251709</FONT></td>
+				<td><FONT FACE=Sefif>'CIA:01- PRO:918- MOD:01</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011224155</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'999.</FONT></td>
+				<td><FONT FACE=Sefif>'0130</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>TP1-COBERTURA SEPELIO</FONT></td>
+				<td><FONT FACE=Sefif>2019-05-08</FONT></td>
+				<td><FONT FACE=Sefif>2065-02-25</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>P121317</FONT></td>
+				<td><FONT FACE=Sefif>2019-05-08</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				</tr>
+				</tbody><tr>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>D-DESGRAVAMEN</FONT></td>
+				<td><FONT FACE=Sefif>01-SEG DESGRAVAMEN TARJETA CREDITO PEN</FONT></td>
+				<td><FONT FACE=Sefif>'001101304030072661</FONT></td>
+				<td><FONT FACE=Sefif>01-FORMALIZADA</FONT></td>
+				<td><FONT FACE=Sefif>'5.00</FONT></td>
+				<td><FONT FACE=Sefif>'251709</FONT></td>
+				<td><FONT FACE=Sefif>'CIA:01- PRO:918- MOD:01</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011239535</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'999.</FONT></td>
+				<td><FONT FACE=Sefif>'0130</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>TP1-COBERTURA SEPELIO</FONT></td>
+				<td><FONT FACE=Sefif>2019-10-17</FONT></td>
+				<td><FONT FACE=Sefif>2065-02-25</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>BATCH</FONT></td>
+				<td><FONT FACE=Sefif>2019-11-08</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				</tr>
+				</tbody><tr>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>D-DESGRAVAMEN</FONT></td>
+				<td><FONT FACE=Sefif>02-SEG DESGRAVAMEN TARJETA CREDITO USD</FONT></td>
+				<td><FONT FACE=Sefif>'001101304030079062</FONT></td>
+				<td><FONT FACE=Sefif>01-FORMALIZADA</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'253818</FONT></td>
+				<td><FONT FACE=Sefif>'CIA:01- PRO:918- MOD:02</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011253287</FONT></td>
+				<td><FONT FACE=Sefif>'USD</FONT></td>
+				<td><FONT FACE=Sefif>'999.</FONT></td>
+				<td><FONT FACE=Sefif>'0130</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>TP1-COBERTURA SEPELIO</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-24</FONT></td>
+				<td><FONT FACE=Sefif>2065-02-25</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>P121317</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-23</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				</tr>
+				</tbody><tr>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>D-DESGRAVAMEN</FONT></td>
+				<td><FONT FACE=Sefif>01-SEG DESGRAVAMEN TARJETA CREDITO PEN</FONT></td>
+				<td><FONT FACE=Sefif>'001101304030079437</FONT></td>
+				<td><FONT FACE=Sefif>01-FORMALIZADA</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'251709</FONT></td>
+				<td><FONT FACE=Sefif>'CIA:01- PRO:918- MOD:01</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011253481</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'999.</FONT></td>
+				<td><FONT FACE=Sefif>'0130</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>TP1-COBERTURA SEPELIO</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-27</FONT></td>
+				<td><FONT FACE=Sefif>2065-02-25</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>P121317</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-27</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				</tr>
+				</tbody><tr>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>D-DESGRAVAMEN</FONT></td>
+				<td><FONT FACE=Sefif>02-SEG DESGRAVAMEN TARJETA CREDITO USD</FONT></td>
+				<td><FONT FACE=Sefif>'001101304030078791</FONT></td>
+				<td><FONT FACE=Sefif>01-FORMALIZADA</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'253818</FONT></td>
+				<td><FONT FACE=Sefif>'CIA:01- PRO:918- MOD:02</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011253015</FONT></td>
+				<td><FONT FACE=Sefif>'USD</FONT></td>
+				<td><FONT FACE=Sefif>'999.</FONT></td>
+				<td><FONT FACE=Sefif>'0130</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>TP1-COBERTURA SEPELIO</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-24</FONT></td>
+				<td><FONT FACE=Sefif>2065-02-25</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>P121317</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-23</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				</tr>
+				</tbody><tr>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>D-DESGRAVAMEN</FONT></td>
+				<td><FONT FACE=Sefif>02-SEG DESGRAVAMEN TARJETA CREDITO USD</FONT></td>
+				<td><FONT FACE=Sefif>'001101304030079615</FONT></td>
+				<td><FONT FACE=Sefif>01-FORMALIZADA</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'253818</FONT></td>
+				<td><FONT FACE=Sefif>'CIA:01- PRO:918- MOD:02</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011253783</FONT></td>
+				<td><FONT FACE=Sefif>'USD</FONT></td>
+				<td><FONT FACE=Sefif>'999.</FONT></td>
+				<td><FONT FACE=Sefif>'0130</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>TP1-COBERTURA SEPELIO</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-27</FONT></td>
+				<td><FONT FACE=Sefif>2065-02-25</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>P121317</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-27</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				</tr>
+				</tbody><tr>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>D-DESGRAVAMEN</FONT></td>
+				<td><FONT FACE=Sefif>01-SEG DESGRAVAMEN TARJETA CREDITO PEN</FONT></td>
+				<td><FONT FACE=Sefif>'001101304030078236</FONT></td>
+				<td><FONT FACE=Sefif>01-FORMALIZADA</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'251709</FONT></td>
+				<td><FONT FACE=Sefif>'CIA:01- PRO:918- MOD:01</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011252396</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'999.</FONT></td>
+				<td><FONT FACE=Sefif>'0130</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>TP1-COBERTURA SEPELIO</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-24</FONT></td>
+				<td><FONT FACE=Sefif>2065-02-25</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>P121317</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-22</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				</tr>
+				</tbody><tr>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>D-DESGRAVAMEN</FONT></td>
+				<td><FONT FACE=Sefif>01-SEG DESGRAVAMEN TARJETA CREDITO PEN</FONT></td>
+				<td><FONT FACE=Sefif>'001101304030078929</FONT></td>
+				<td><FONT FACE=Sefif>01-FORMALIZADA</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'251709</FONT></td>
+				<td><FONT FACE=Sefif>'CIA:01- PRO:918- MOD:01</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011253147</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'999.</FONT></td>
+				<td><FONT FACE=Sefif>'0130</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>TP1-COBERTURA SEPELIO</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-24</FONT></td>
+				<td><FONT FACE=Sefif>2065-02-25</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>P121317</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-23</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				</tr>
+				</tbody><tr>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>D-DESGRAVAMEN</FONT></td>
+				<td><FONT FACE=Sefif>01-SEG DESGRAVAMEN TARJETA CREDITO PEN</FONT></td>
+				<td><FONT FACE=Sefif>'001101994009119794</FONT></td>
+				<td><FONT FACE=Sefif>01-FORMALIZADA</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'251709</FONT></td>
+				<td><FONT FACE=Sefif>'CIA:01- PRO:918- MOD:01</FONT></td>
+				<td><FONT FACE=Sefif>'001101995001144664</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'999.</FONT></td>
+				<td><FONT FACE=Sefif>'0199</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>TP1-COBERTURA SEPELIO</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-24</FONT></td>
+				<td><FONT FACE=Sefif>2065-02-25</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>P121317</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-24</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				</tr>
+				</tbody><tr>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>D-DESGRAVAMEN</FONT></td>
+				<td><FONT FACE=Sefif>01-SEG DESGRAVAMEN TARJETA CREDITO PEN</FONT></td>
+				<td><FONT FACE=Sefif>'001101304030064243</FONT></td>
+				<td><FONT FACE=Sefif>01-FORMALIZADA</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'251709</FONT></td>
+				<td><FONT FACE=Sefif>'CIA:01- PRO:918- MOD:01</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011223833</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'999.</FONT></td>
+				<td><FONT FACE=Sefif>'0130</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>TP1-COBERTURA SEPELIO</FONT></td>
+				<td><FONT FACE=Sefif>2019-05-07</FONT></td>
+				<td><FONT FACE=Sefif>2065-02-25</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>P121317</FONT></td>
+				<td><FONT FACE=Sefif>2019-05-07</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				</tr>
+				</tbody><tr>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif>D-DESGRAVAMEN</FONT></td>
+				<td><FONT FACE=Sefif>01-SEG DESGRAVAMEN TARJETA CREDITO PEN</FONT></td>
+				<td><FONT FACE=Sefif>'001101304030079402</FONT></td>
+				<td><FONT FACE=Sefif>01-FORMALIZADA</FONT></td>
+				<td><FONT FACE=Sefif>'0.00</FONT></td>
+				<td><FONT FACE=Sefif>'251709</FONT></td>
+				<td><FONT FACE=Sefif>'CIA:01- PRO:918- MOD:01</FONT></td>
+				<td><FONT FACE=Sefif>'001101305011253457</FONT></td>
+				<td><FONT FACE=Sefif>'PEN</FONT></td>
+				<td><FONT FACE=Sefif>'999.</FONT></td>
+				<td><FONT FACE=Sefif>'0130</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>TP1-COBERTURA SEPELIO</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-27</FONT></td>
+				<td><FONT FACE=Sefif>2065-02-25</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>'</FONT></td>
+				<td><FONT FACE=Sefif>P121317</FONT></td>
+				<td><FONT FACE=Sefif>2020-02-27</FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				<td><FONT FACE=Sefif></FONT></td>
+				</tr>
+				</tbody></table>                                
+				
+				
+
+
+
